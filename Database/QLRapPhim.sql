@@ -142,7 +142,7 @@ CREATE TABLE Ve
 )
 GO
 
---Trigger
+--Trigger--
 
 CREATE TRIGGER UTG_INSERT_CheckDateLichChieu
 ON dbo.LichChieu
@@ -340,7 +340,7 @@ END
 GO
 
 
---DOANH THU
+--DOANH THU--
 CREATE PROC USP_GetRevenueByMovieAndDate
 @idMovie VARCHAR(50), @fromDate date, @toDate date
 AS
@@ -389,7 +389,7 @@ BEGIN
 END
 GO
 
---KHÁCH HÀNG
+--KHÁCH HÀNG--
 CREATE PROC USP_GetCustomer
 AS
 BEGIN
@@ -417,7 +417,7 @@ BEGIN
 END
 GO
 
---THỂ LOẠI
+--THỂ LOẠI--
 CREATE PROC USP_InsertGenre
 @idGenre VARCHAR(50), @ten NVARCHAR(100), @moTa NVARCHAR(100)
 AS
@@ -427,7 +427,7 @@ BEGIN
 END
 GO
 
---LOẠI MÀN HÌNH
+--LOẠI MÀN HÌNH--
 CREATE PROC USP_InsertScreenType
 @idScreenType VARCHAR(50), @ten NVARCHAR(100)
 AS
@@ -437,7 +437,7 @@ BEGIN
 END
 GO
 
---PHIM
+--PHIM--
 CREATE PROC USP_GetMovie
 AS
 BEGIN
